@@ -17,6 +17,7 @@
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
+  --navtop-background-color: rgb(36, 73, 88);
   --text-color: #000;
 
   /* fonts */
@@ -234,4 +235,8 @@ main .section[data-section-status='initialized'] {
 
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .section.navtop {
+  background-color: var(--navtop-background-color);
 }
