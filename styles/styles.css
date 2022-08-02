@@ -19,6 +19,7 @@
   --highlight-background-color: #ccc;
   --white-background-color: #fff;
   --teal-background-color: rgb(36, 73, 88);
+  --brblue-background-color: #001B64;
   --text-color: #000;
 
   /* fonts */
@@ -244,4 +245,8 @@ main .section.white {
 
 main .section.teal {
   background-color: var(--teal-background-color);
+}
+
+main .section.brblue {
+  background-color: var(--brblue-background-color);
 }
