@@ -253,3 +253,8 @@ main .section.brblue {
   background-color: var(--brblue-background-color);
   color: var(--white-text-color);
 }
+
+main .section.whiteblue {
+  background-color: var(--white-background-color);
+  color: var(--ltblue-text-color);
+}
