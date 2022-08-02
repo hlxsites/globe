@@ -19,7 +19,7 @@
   --highlight-background-color: #ccc;
   --white-background-color: #fff;
   --teal-background-color: rgb(36, 73, 88);
-  --brblue-background-color: #001B64;
+  --brblue-background-color: rgba(0,27,100,0.9);
   --text-color: #000;
 
   /* fonts */
