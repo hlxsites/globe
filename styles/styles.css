@@ -18,6 +18,7 @@
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --white-background-color: #fff;
+  --teal-background-color: rgb(36, 73, 88);
   --text-color: #000;
 
   /* fonts */
@@ -239,4 +240,8 @@ main .section.highlight {
 
 main .section.white {
   background-color: var(--white-background-color);
+}
+
+main .section.teal {
+  background-color: var(--teal-background-color);
 }
