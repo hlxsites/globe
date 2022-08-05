@@ -14,7 +14,9 @@ main .image-overlay {
     min-height: 300px;
 }
 
-main .image-overlay h1 {
+main .image-overlay h1, h2 {
+    position: absolute;
+    z-index: +1;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
