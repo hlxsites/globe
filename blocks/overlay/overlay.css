@@ -16,7 +16,7 @@
 
 .overlay h1, h2, p, dl, ol, ul, pre, blockquote {
     position: absolute;
-    z-index: +1;
+    /* z-index: +1; This breaks the whole site */
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
