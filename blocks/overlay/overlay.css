@@ -1,20 +1,20 @@
 /* block specific CSS goes here */
 
-.overlay-container > div {
+.overlay > div {
     max-width: unset;
 }
   
-.hero-container {
+.overlay-container {
     padding: 0;
 }
   
-.hero {
+.overlay {
     position: relative;
     padding: 32px;
     min-height: 300px;
 }
 
-.hero {
+.overlay {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -22,7 +22,9 @@
 }
 
 
-.hero picture {
+.overlay picture {
+    position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     bottom: 0;
@@ -31,7 +33,7 @@
     box-sizing: border-box;
 }
 
-.hero img {
+.overlay img {
     object-fit: cover;
     width: 100%;
     height: 100%;
