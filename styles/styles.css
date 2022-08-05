@@ -254,6 +254,7 @@ main .section.teal {
 
 main .section.teal2 {
   background-color: var(--teal2-background-color);
+  color: var(--white-text-color);
 }
 
 main .section.brblue {
