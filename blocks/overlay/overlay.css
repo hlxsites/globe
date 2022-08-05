@@ -15,8 +15,8 @@
 }
 
 .overlay {
-    /* position: absolute; This breaks the whole site */
-    /* z-index: +1; This breaks the whole site */
+    position: absolute;
+    z-index: +1;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
