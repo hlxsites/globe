@@ -14,7 +14,7 @@
     min-height: 300px;
 }
 
-.overlay h1, h2, p, dl, ol, ul, pre, blockquote {
+.overlay {
     /* position: absolute; This breaks the whole site */
     /* z-index: +1; This breaks the whole site */
     max-width: 1200px;
