@@ -248,7 +248,7 @@ main .section.white {
 }
 
 main .section.teal {
-  background-color: var(--teal2-background-color);
+  background-color: var(--teal-background-color);
   color: var(--white-text-color);
 }
 
