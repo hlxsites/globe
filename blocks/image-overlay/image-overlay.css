@@ -1,6 +1,6 @@
 /* block specific CSS goes here */
 
-main .hero-container > div {
+main .image-overlay > div {
     max-width: unset;
 }
   
