@@ -14,7 +14,7 @@ main .image-overlay {
     min-height: 300px;
 }
 
-main .image-overlay h1, h2 {
+main .image-overlay h1, h2, p, dl, ol, ul, pre, blockquote {
     position: absolute;
     z-index: +1;
     max-width: 1200px;
