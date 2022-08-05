@@ -1,20 +1,20 @@
 /* block specific CSS goes here */
 
-main .image-overlay > div {
+.overlay > div {
     max-width: unset;
 }
   
-main .image-overlay-container {
+.overlay-container {
     padding: 0;
 }
   
-main .image-overlay {
+.overlay {
     position: relative;
     padding: 32px;
     min-height: 300px;
 }
 
-main .image-overlay h1, h2, p, dl, ol, ul, pre, blockquote {
+.overlay h1, h2, p, dl, ol, ul, pre, blockquote {
     position: absolute;
     z-index: +1;
     max-width: 1200px;
@@ -24,7 +24,7 @@ main .image-overlay h1, h2, p, dl, ol, ul, pre, blockquote {
 }
 
 
-main .image-overlay picture {
+.overlay picture {
     position: absolute;
     z-index: 0;
     top: 0;
@@ -35,7 +35,7 @@ main .image-overlay picture {
     box-sizing: border-box;
 }
 
-main .image-overlay img {
+.overlay img {
     object-fit: cover;
     width: 100%;
     height: 100%;
