@@ -20,6 +20,7 @@
   --white-background-color: #fff;
   --teal-background-color: rgb(36, 73, 88);
   --brblue-background-color: rgba(0,27,100,0.9);
+  --dkblue-background-color: #001f3f;
   --text-color: #000;
   --white-text-color: #fff;
   --ltblue-text-color: #0074D9;
@@ -251,6 +252,11 @@ main .section.teal {
 
 main .section.brblue {
   background-color: var(--brblue-background-color);
+  color: var(--white-text-color);
+}
+
+main .section.dkblue {
+  background-color: var(--dkblue-background-color);
   color: var(--white-text-color);
 }
 
