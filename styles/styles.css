@@ -19,6 +19,7 @@
   --highlight-background-color: #ccc;
   --white-background-color: #fff;
   --teal-background-color: rgb(36, 73, 88);
+  --teal2-background-color: #244958;
   --brblue-background-color: rgba(0,27,100,0.9);
   --dkblue-background-color: #001f3f;
   --text-color: #000;
@@ -247,6 +248,11 @@ main .section.white {
 }
 
 main .section.teal {
+  background-color: var(--teal2-background-color);
+  color: var(--white-text-color);
+}
+
+main .section.teal2 {
   background-color: var(--teal-background-color);
 }
 
