@@ -26,6 +26,7 @@
   --text-color: #000;
   --white-text-color: #fff;
   --ltblue-text-color: #0074D9;
+  --yellow-background-color: #ffdc00;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -276,4 +277,8 @@ main .section.ltblue {
 main .section.whiteblue {
   background-color: var(--white-background-color);
   color: var(--ltblue-text-color);
+}
+
+main .section.yellow {
+  background-color: var(--yellow-background-color);
 }
