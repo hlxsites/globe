@@ -27,7 +27,7 @@
       background-color: rgb(0, 27, 100);
       border-radius: 0px;
       border: 0px solid rgb(0, 156, 222);
-      margin-right: 1px
+      margin-right: 3px
       color: white;
       padding: 36px 36px;
       text-align: center;
@@ -39,5 +39,5 @@
       width: 150px;
       height: 150px;
     }
-    
+
 }
