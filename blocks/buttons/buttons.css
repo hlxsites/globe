@@ -39,6 +39,7 @@
       width: 150px;
       height: 150px;
       white-space: normal;
+      word-break: break-all;
     }
 
 }
