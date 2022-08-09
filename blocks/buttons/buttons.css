@@ -39,8 +39,5 @@
       width: 150px;
       height: 150px;
     }
-
-    .buttons .button:not(:last-child) {
-      border-right: none; /* Prevent double borders */
-    }
+    
 }
