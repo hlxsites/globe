@@ -23,7 +23,7 @@
         margin-left: unset;
     }
 
-    .btn-group .button {
+    .buttons .button {
       background-color: rgb(0, 27, 100);
       border: 2px solid rgb(0, 156, 222);
       color: white;
@@ -38,7 +38,7 @@
       height: 150px;
     }
 
-    .btn-group .button:not(:last-child) {
+    .buttons .button:not(:last-child) {
       border-right: none; /* Prevent double borders */
     }
 }
