@@ -29,8 +29,8 @@
   --yellow-background-color: #ffdc00;
 
   /* fonts */
-  --body-font-family: FSElliotPro,Helvetica,Arial,sans-serif;
-  /* --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif; # Original line */
+  --body-font-family: "Hero New", sans-serif;
+  --body-font-weight: 400;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
