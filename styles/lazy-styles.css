@@ -1,1 +1,40 @@
 /* below the fold CSS goes here */
+@font-face {
+  font-family: fselliotpro;
+  src: url("/styles/fonts/FSElliotPro.woff2") format("woff2"),
+       url("/styles/fonts/FSElliotPro.woff") format("woff"),
+       url("/styles/fonts/FSElliotPro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: fselliotprolight;
+  src: url("/styles/fonts/FSElliotProLight.woff2") format("woff2"),
+       url("/styles/fonts/FSElliotProLight.woff") format("woff"),
+       url("/styles/fonts/FSElliotProLight.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: fselliotprobold;
+  src: url("/styles/fonts/FSElliotProBold.woff2") format("woff2"),
+       url("/styles/fonts/FSElliotProBold.woff") format("woff"),
+       url("/styles/fonts/FSElliotProBold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: fselliotproheavy;
+  src: url("/styles/fonts/FSElliotProHeavy.woff2") format("woff2"),
+       url("/styles/fonts/FSElliotProHeavy.woff") format("woff"),
+       url("/styles/fonts/FSElliotProHeavy.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
