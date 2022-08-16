@@ -36,9 +36,9 @@
   --yellow-background-color: #ffdc00;
 
   /* fonts */
-  --body-font-family: fselliotpro-fallback, fselliotprolight, helvetica, arial, sans-serif;
+  --body-font-family: fselliotprolight, fselliotpro-fallback, helvetica, arial, sans-serif;
   --body-font-weight: 400;
-  --heading-font-family: fselliotpro-fallback, fselliotpro, helvetica, arial, sans-serif;
+  --heading-font-family: fselliotpro, fselliotpro-fallback, helvetica, arial, sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
