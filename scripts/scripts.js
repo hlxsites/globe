@@ -633,9 +633,19 @@ function loadFooter(footer) {
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
-function buildAutoBlocks(main) {
+async function buildAutoBlocks(main) {
   try {
-    buildHeroBlock(main);
+    let template = toClassName(getMetadata('template'));
+    if (window.location.pathname.includes('/newsroom/') && !template) template = 'blog';
+    const templates = ['blog'];
+    if (templates.includes(template)) {
+      const mod = await import(`./${template}.js`);
+      if (mod.default) {
+        await mod.default(main);
+      }
+    } else {
+      buildHeroBlock(main);
+    }
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);
