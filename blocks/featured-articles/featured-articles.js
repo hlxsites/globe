@@ -12,10 +12,11 @@ export function createBlogCard(article, classPrefix, eager = false) {
     eager,
     [{ width: 750 }],
   ).outerHTML;
-  const category = toCategory(article.category);
+  const mainTag = JSON.parse(article.tags)[0];
+  const category = toCategory(mainTag);
   const categoryHref = article.noCategoryLink ? '#' : `href="/blog/category/${category}"`;
   card.innerHTML = `<div class="${classPrefix}-card-header category-color-${category}">
-    <span class="${classPrefix}-card-category"><a ${categoryHref}>${article.category}</a></span> 
+    <span class="${classPrefix}-card-category"><a ${categoryHref}>${mainTag}</a></span> 
     <span class="${classPrefix}-card-readtime">${article.readTime || ''}</span>
     </div>
     <div class="${classPrefix}-card-picture"><a href="${article.path}">${pictureString}</a></div>
