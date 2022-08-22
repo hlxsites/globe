@@ -32,9 +32,7 @@
     bottom: 0;
     right: 0;
     object-fit: cover;
-    /* box-sizing: border-box; # Original */
-    box-sizing: content-box;
-    width: 100%;
+    box-sizing: border-box;
 }
 
  .banner img {
