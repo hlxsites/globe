@@ -5,22 +5,22 @@ footer {
   color: white;
 }
 
-a:link {
+footer a:link {
   color: white;
   text-decoration: none;
 }
 
-a:visited {
+footer a:visited {
   color: white;
   text-decoration: none;
 }
 
-a:hover {
+footer a:hover {
   color: DarkGrey;
   text-decoration: none;
 }
 
-a:active {
+footer a:active {
   color: DarkGrey;
   text-decoration: none;
 }
