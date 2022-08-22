@@ -6,7 +6,23 @@ footer {
 }
 
 a:link {
-  color: white;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F5FFFA;
+  text-decoration: none;
+}
+
+a:active {
+  color: #F5FFFA;
+  text-decoration: none;
 }
 
 footer .footer {
