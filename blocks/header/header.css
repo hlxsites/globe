@@ -5,7 +5,7 @@ header nav {
     'hamburger brand tools' var(--nav-height)
     'sections sections sections' 1fr / 50px 1fr 50px;
   align-items: center;
-  padding: 100px 2rem;
+  padding: 0 2rem;
   position: fixed;
   z-index: 1;
   background-color: var(--background-color);
