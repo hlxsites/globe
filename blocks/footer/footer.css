@@ -5,6 +5,10 @@ footer {
   color: white;
 }
 
+a:link {
+  color: white;
+}
+
 footer .footer {
   max-width: 1200px;
   margin: auto;
