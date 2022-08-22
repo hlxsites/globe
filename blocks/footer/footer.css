@@ -16,12 +16,12 @@ a:visited {
 }
 
 a:hover {
-  color: CadetBlue;
+  color: DarkGrey;
   text-decoration: none;
 }
 
 a:active {
-  color: CadetBlue;
+  color: DarkGrey;
   text-decoration: none;
 }
 
