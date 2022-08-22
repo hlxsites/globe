@@ -13,7 +13,6 @@ header nav {
   height: var(--nav-height);
   box-sizing: border-box;
   font-family: var(--body-font-family);
-  margin-top: 10px;
   border-bottom: 3px solid DarkGrey;
 }
 
@@ -37,7 +36,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand p {
-  margin: 0;
+  margin: 20;
 }
 
 header nav .nav-brand img {
