@@ -208,6 +208,11 @@ main blockquote p::after {
   line-height: 0;
 }
 
+main img {
+  display: block;
+  margin: auto;
+}
+
 hr {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -289,9 +294,4 @@ main .section.whiteblue {
 
 main .section.yellow {
   background-color: var(--yellow-background-color);
-}
-
-main img {
-  display: block;
-  margin: auto;
 }
