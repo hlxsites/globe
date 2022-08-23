@@ -292,5 +292,6 @@ main .section.yellow {
 }
 
 main img {
-  margin: 0 auto;
+  display: block;
+  margin: auto;
 }
