@@ -38,3 +38,28 @@
   font-style: normal;
   display: swap;
 }
+
+@font-face {
+  font-family: brie-icon;
+  src: url("/styles/fonts/brie-icon.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+
+/* brie-icon */
+
+span.icon-facebook::before {
+  font-family: brie-icon;
+  content: "\e9bf";
+}
+
+span.icon-twitter::before {
+  font-family: brie-icon;
+  content: "\e9f4";
+}
+
+span.icon-instagram::before {
+  font-family: brie-icon;
+  content: "\e9cf";
+}
