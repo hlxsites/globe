@@ -34,3 +34,15 @@ footer .footer {
 footer .footer p {
   margin: 0;
 }
+
+footer .nav {
+  list-style-type: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+footer .nav li {
+  display: inline-block;
+}
+
