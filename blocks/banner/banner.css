@@ -18,7 +18,7 @@ main .banner {
 
 main .banner h3, h4 {
     max-width: unset;
-    padding: 15px;
+    /* padding: 15px; */
     color: white;
     background-color: rgba(0,0,0,0.3);
 }
