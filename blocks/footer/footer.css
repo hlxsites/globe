@@ -3,6 +3,7 @@ footer {
   background-color: var(--teal-background-color);
   font-size: var(--body-font-size-s);
   color: white;
+  border-bottom: 5px solid #009cde;
 }
 
 footer a:link {
