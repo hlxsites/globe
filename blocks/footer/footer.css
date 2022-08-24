@@ -35,10 +35,10 @@ footer .footer p {
   margin: 0;
 }
 
-footer .nav {
+footer .footer .nav {
   text-align: right;
   margin: 0;
-  padding: 0;
+  padding: 15px;
   display: inline-block;
 }
 
