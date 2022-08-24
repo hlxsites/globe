@@ -38,9 +38,10 @@ footer .footer p {
 footer ul {
   list-style-type: none;
   margin: 0;
-  padding: 15;
+  padding: 0;
 }
 
 footer li {
   display: inline;
+  padding: 15;
 }
