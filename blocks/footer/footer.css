@@ -41,6 +41,15 @@ footer ul {
   padding: 0;
 }
 
-footer li {
+/* footer li {
   display: inline;
+} */
+
+footer li {
+  float: left;
+}
+
+footer li a {
+  display: block;
+  padding: 0px 10px 0px 10px;
 }
