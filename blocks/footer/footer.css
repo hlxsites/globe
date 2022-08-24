@@ -4,7 +4,6 @@ footer {
   font-size: var(--body-font-size-s);
   color: white;
   width: 100vw;
-  box-sizing: border-box;
   border-bottom: 5px solid #009cde;
 }
 
