@@ -52,14 +52,17 @@
 span.icon-facebook::before {
   font-family: brie-icon;
   content: "\e9bf";
+  font-size: 40px;
 }
 
 span.icon-twitter::before {
   font-family: brie-icon;
   content: "\e9f4";
+  font-size: 40px;
 }
 
 span.icon-instagram::before {
   font-family: brie-icon;
   content: "\e9cf";
+  font-size: 40px;
 }
