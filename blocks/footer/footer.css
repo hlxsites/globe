@@ -35,7 +35,8 @@ footer .footer p {
   margin: 0;
 }
 
-footer .container {  display: grid;
+footer .container {  
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -46,15 +47,15 @@ footer .container {  display: grid;
     ". . .";
 }
 
-footer .section.logo { 
+footer .logo { 
   grid-area: logo; 
 }
 
-footer .section.nav { 
+footer .nav { 
   grid-area: nav; 
 }
 
-footer .section.social { 
+footer .social { 
   grid-area: social; 
 }
 
