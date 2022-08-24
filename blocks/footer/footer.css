@@ -35,11 +35,26 @@ footer .footer p {
   margin: 0;
 }
 
-footer .footer .nav {
-  text-align: right;
-  margin: 0;
-  padding: 15px;
-  display: inline-block;
+footer .container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo nav social"
+    ". . ."
+    ". . .";
 }
 
+footer .section.logo { 
+  grid-area: logo; 
+}
+
+footer .section.nav { 
+  grid-area: nav; 
+}
+
+footer .section.social { 
+  grid-area: social; 
+}
 
