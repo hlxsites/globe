@@ -1,16 +1,16 @@
 /* block specific CSS goes here */
 
-main .bio-container > div {
+ .bio-container > div {
     max-width: unset;
 }
 
-main .bio-container {
+ .bio-container {
     padding: 0;
     margin: 0;
     width: 1200px;
 }
 
-main .bio {
+ .bio {
     border-bottom: 2px solid #1C91C5;
     background: #fff;
     color: #244958;
@@ -20,7 +20,7 @@ main .bio {
     margin-bottom: 1rem;
 }
 
-main .bio h1 h2 h3 h4 h5 {
+ .bio h1 h2 h3 h4 h5 {
     color: #244958;
     font-family: FSElliotProLight,Helvetica,Arial,sans-serif;
     font-size: 1.8rem;
