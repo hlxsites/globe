@@ -11,6 +11,8 @@
 }
 
  .bio {
+    position: relative;
+    min-height: 300px;
     border-bottom: 2px solid #1C91C5;
     background: #fff;
     color: #244958;
