@@ -1,6 +1,6 @@
 /* block specific CSS goes here */
 
-bio {
+.bio .block {
   padding-top: 10px;
   background-color: var(--teal-background-color);
   font-size: var(--body-font-size-s);
