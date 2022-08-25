@@ -1,14 +1,25 @@
 /* block specific CSS goes here */
 
+.bio > div {
+    max-width: unset;
+}
+  
+.bio-container {
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #244958;
+    font-family: FSElliotProLight,Helvetica,Arial,sans-serif;
+}
+  
 .bio {
-  padding-top: 10px;
-  background-color: var(--teal-background-color);
-  font-size: var(--body-font-size-s);
-  color: white;
-  width: 100vw;
-  border-bottom: 5px solid #009cde;
-  display: flex;
-  text-align: left;
-  justify-content: center;
-  flex-direction: row;
+    position: relative;
+    padding: 32px;
+    min-height: 300px;
+}
+
+.bio {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
 }
