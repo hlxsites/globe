@@ -6,6 +6,8 @@ footer {
   width: 100vw;
   border-bottom: 5px solid #009cde;
   display: flex;
+  text-align: left;
+  justify-content: center;
   flex-direction: row;
 }
 
@@ -59,5 +61,9 @@ footer li {
 }
 
 footer li a {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: row;
   padding-right: 20px;
 }
