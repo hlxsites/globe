@@ -6,9 +6,6 @@
   
 .bio-container {
     padding: 0;
-    background-color: #f7f7f7;
-    color: #244958;
-    font-family: FSElliotProLight,Helvetica,Arial,sans-serif;
 }
   
 .bio {
@@ -21,5 +18,7 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    background-color: #f7f7f7;
+    color: #244958;
+    font-family: FSElliotProLight,Helvetica,Arial,sans-serif;
 }
