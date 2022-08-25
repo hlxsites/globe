@@ -1,7 +1,7 @@
 /* block specific CSS goes here */
 
 main .bio-container > div {
-    max-width: unset;
+    max-width: 1200px;
 }
 
 main .bio-container {
