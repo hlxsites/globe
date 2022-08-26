@@ -298,7 +298,7 @@ main .section.yellow {
 
 /* blog theme */
 
-.blog {
+main .blog {
  
   /* unvisited link */
   a:link {
