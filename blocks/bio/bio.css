@@ -2,13 +2,16 @@
 
 .bio > div {
     max-width: unset;
-    background-color: light-grey;
 }
   
 .bio-container {
     padding: 0;
 }
   
+.bio block {
+    background-color: light-grey;
+}
+
 .bio {
     position: relative;
     padding: 32px;
