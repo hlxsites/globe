@@ -298,7 +298,7 @@ main .section.yellow {
 
 /* blog theme */
 
-.blog a:link a:visited a:active {
+.blog a {
   color: black;
   text-decoration: underline;
   font-weight: bold;
