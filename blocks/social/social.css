@@ -16,3 +16,16 @@
     margin-right: auto;
     color: #244958;
 }
+
+.social button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  border-radius: 3px 3px;
+  margin: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+}
