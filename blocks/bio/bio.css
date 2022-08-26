@@ -6,11 +6,15 @@
   
 .bio-container {
     padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .bio {
     position: relative;
     padding: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
