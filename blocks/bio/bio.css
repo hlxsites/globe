@@ -12,7 +12,10 @@
 
 .bio {
     position: relative;
-    padding: 32px;
+    padding-top: 0px;
+    padding-right: 32px;
+    padding-bottom: 0px;
+    padding-left: 32px;
     margin-top: 0px;
     margin-bottom: 0px;
     max-width: 1200px;
