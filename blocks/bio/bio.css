@@ -11,7 +11,6 @@
 .bio {
     position: relative;
     padding: 32px;
-    background-color: light-grey;
 }
 
 .bio {
@@ -20,10 +19,11 @@
     margin-right: auto;
 }
 
-.bio p {
+.bio p div {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    background-color: light-grey;
     color: #244958;
     font-family: FSElliotProLight,Helvetica,Arial,sans-serif;
 }
