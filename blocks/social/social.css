@@ -30,9 +30,10 @@
   margin: 5px;
   padding: 5px 5px;
   text-align: center;
+  vertical-align: baseline;
   text-decoration: none;
   display: inline-block;
   line-height: normal;
   float: right;
-  font-size: 30px;
+  font-size: 15px;
 }
