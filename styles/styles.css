@@ -298,18 +298,12 @@ main .section.yellow {
 
 /* blog theme */
 
-/* unvisited link */
-.blog a:link {
+.blog a:link a:visited a:active {
   color: black;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-/* visited link */
-.blog a:visited {
-  color: black;
+.blog {
+  color: #244958;
 }
-
-/* selected link */
-.blog a:active {
-  color: black;
-}
- 
