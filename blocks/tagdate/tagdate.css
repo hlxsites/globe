@@ -1,16 +1,16 @@
 /* block specific CSS goes here */
 
-.bio > div {
+.tagdate > div {
     max-width: unset;
 }
   
-.bio-container {
+.tagdate-container {
     padding: 0;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.bio {
+.tagdate {
     position: relative;
     padding: 32px;
     margin-top: 0px;
@@ -24,6 +24,6 @@
     font-size: 14px;
 }
 
-.bio a {
+.tagdate a {
     color: #244958;
 }
