@@ -84,3 +84,10 @@ span.icon-instagram2::before {
   content: "\e9cf";
   font-size: 20px;
 }
+
+
+span.icon-tag::before {
+  font-family: brie-icon;
+  content: "\e9db";
+  font-size: 14px;
+}
