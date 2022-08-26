@@ -66,3 +66,21 @@ span.icon-instagram::before {
   content: "\e9cf";
   font-size: 40px;
 }
+
+span.icon-facebook2::before {
+  font-family: brie-icon;
+  content: "\e9bf";
+  font-size: 20px;
+}
+
+span.icon-twitter2::before {
+  font-family: brie-icon;
+  content: "\e9f4";
+  font-size: 20px;
+}
+
+span.icon-instagram2::before {
+  font-family: brie-icon;
+  content: "\e9cf";
+  font-size: 20px;
+}
