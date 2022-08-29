@@ -90,4 +90,8 @@ main .section.highlight .default-content-wrapper {
         padding-inline-start: 3%;
         padding-inline-end: 3%;
     }
+
+    main .section.highlight .default-content-wrapper {
+        font-size: 0.7em;
+    } 
 }
