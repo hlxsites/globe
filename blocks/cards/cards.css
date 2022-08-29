@@ -3,17 +3,32 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 12px;
+    object-fit: cover;
+    padding-inline-start: 3%;
+    padding-inline-end: 3%;
 }
 
 .cards > ul > li {
-    border: 1px solid var(--highlight-background-color);
     background-color: var(--background-color)
 }
 
 .cards .cards-card-body {
     margin: 16px;
+}
+
+.cards .cards-card-body > p:first-child {
+    font-size: 0.55em;
+}
+
+.cards .cards-card-body > p:nth-child(2) {
+    font-size: 0.6em;
+    margin-top: 2px;
+}
+
+.cards .cards-card-body > p:nth-child(3) {
+    font-size: 0.5em;
 }
 
 .cards .cards-card-image {
@@ -26,6 +41,53 @@
 
 .cards > ul > li img {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    height: auto;
     object-fit: cover;
+    display: inline-block;
+    text-align: center;
+    height: auto;
+    transform: scale(1);
+}
+
+.cards > ul > li img:hover {
+    transition: 0.4s ease-in-out;
+    transform: scale(1.03);
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.cards .cards-card-image {
+    overflow: hidden;
+    line-height: 0;
+    opacity: 1;
+    transition: opacity 1s;  
+    width: 100%; 
+    height: auto;
+    border-bottom: 2px solid blue;
+}
+
+main .section.highlight {
+    background-color: #f6f7fa;
+}
+
+main .section.highlight .cards-wrapper {
+    max-width: 100%;
+}
+
+main .section.highlight .default-content-wrapper {
+    margin-left: 3%; 
+    font-size: 1em;
+} 
+
+@media (min-width: 900px) {
+    .cards > ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+        object-fit: cover;
+        grid-gap: 16px;
+        padding-inline-start: 3%;
+        padding-inline-end: 3%;
+    }
 }
