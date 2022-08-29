@@ -1,13 +1,28 @@
-footer {
+.footer {
   padding-top: 10px;
   background-color: var(--teal-background-color);
   font-size: var(--body-font-size-s);
   color: white;
-  width: 100vw;
   border-bottom: 5px solid #009cde;
-  display: flex;
-  text-align: left;
+  text-align: center;
   justify-content: center;
+  max-width: 100%;
+}
+
+.footer > div > div h5 {
+  padding-bottom: 10px;
+  font-size: 0.75em;
+  color: lightsteelblue;
+}
+
+.footer > div > div:first-child {
+  border-bottom: 1px solid gray;
+}
+
+.footer > div > div:nth-child(2) > p {
+  line-height: 10px;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 footer a:link {
@@ -15,41 +30,28 @@ footer a:link {
   text-decoration: none;
 }
 
-footer a:visited {
-  color: white;
-  text-decoration: none;
-}
+@media (min-width: 900px) {
+  .footer {
+    background-color: var(--teal-background-color);
+  }
 
-footer a:hover {
-  color: DarkGrey;
-  text-decoration: none;
-}
+  .footer > div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-footer a:active {
-  color: DarkGrey;
-  text-decoration: none;
-}
+  .footer > div > div:first-child {
+    border-bottom: none;
+  }
 
-footer .footer {
-  max-width: 1200px;
-  margin: auto;
-}
+  .footer > div > div:nth-child(2) {
+    text-align: right;
+  }
 
-footer .footer p {
-  margin: 0;
-}
-
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-footer li {
-  float: left;
-}
-
-footer li a {
-  padding-right: 20px;
+  .footer > div > div:nth-child(2) > p {
+    padding-left: 7%;
+    display: inline-block;
+  }
 }
