@@ -1,41 +1,41 @@
-main .section > .related-posts-wrapper {
+main .section > .related-articles-wrapper {
   max-width: unset;
   background-color: var(--color-gray-1);
-  background-image: url('../../styles/related-posts-leaf.png');
+  background-image: url('../../styles/related-articles-leaf.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
-  padding: 150px 0;
-  margin-top: 100px;
+  padding: 0;
+  margin-top: 0;
 }
 
-main  .section > .related-posts-wrapper::before {
-  content: 'You might also like...';
+main  .section > .related-articles-wrapper::before {
+  content: 'RELATED ARTICLES';
   display: block;
   font-family: var(--heading-font-family);
-  font-style: italic;
   font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
   max-width: 1200px;
   margin: auto;
-  font-size: 48px;
   color: var(--heading-color);
 }
 
-main .related-posts {
-  display: flex;
+main .related-articles {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
 }
 
-main .related-posts-card {
+main .related-articles-card {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
   font-size: 15px;
 }
 
-main .related-posts-card-header {
+main .related-articles-card-header {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -45,22 +45,22 @@ main .related-posts-card-header {
   font-size: 12px;
 }
 
-main .related-posts-card-header a:any-link {
+main .related-articles-card-header a:any-link {
   color: inherit;
   text-decoration: inherit;
 }
 
-main .related-posts-card .related-posts-card-picture {
+main .related-articles-card .related-articles-card-picture {
   margin-bottom: 25px;
 }
 
-main .related-posts-card img {
+main .related-articles-card img {
   width: 100%;
   box-shadow: var(--box-shadow-2);
   border-radius: 15px;
 }
 
-main .related-posts-card h3 {
+main .related-articles-card h3 {
   font-family: var(--heading-font-family);
   font-size: 18px;
   font-weight: 600;
@@ -68,7 +68,7 @@ main .related-posts-card h3 {
   margin: 0 0 20px;
 }
 
-main .related-posts-card .related-posts-card-readtime::before {
+main .related-articles-card .related-articles-card-readtime::before {
   content: '•';
   display: inline-block;
   margin: 1px 8px 0 4px;
@@ -76,11 +76,11 @@ main .related-posts-card .related-posts-card-readtime::before {
   vertical-align: top;
 }
 
-main .related-posts-card .related-posts-card-readtime:empty::before {
+main .related-articles-card .related-articles-card-readtime:empty::before {
   display: none;
 }
 
-main .related-posts-card-body a:any-link{
+main .related-articles-card-body a:any-link{
   position: relative;
   font-weight: 700;
   text-decoration: none;
@@ -89,7 +89,7 @@ main .related-posts-card-body a:any-link{
   font-size: 15px;
 }
 
-main .related-posts-card-body a:any-link::after {
+main .related-articles-card-body a:any-link::after {
   content: "";
   border: solid var(--heading-color);
   border-width: 0 2.5px 2.5px 0;
@@ -101,14 +101,32 @@ main .related-posts-card-body a:any-link::after {
   right: -20px;
 }
 
-@media (min-width: 600px) {
-  main .related-posts-card {
+/* @media (min-width: 600px) {
+  main .related-articles-card {
       width: 50%;
   }
 }
 
 @media (min-width: 900px) {
-  main .related-posts-card {
+  main .related-articles-card {
       width: 25%;
   }
-}
+} */
+
+@media (min-width: 900px) {
+  main .related-articles-container.related-articles-cols {
+    position: relative;
+    display: grid;
+    grid-template-columns: calc(100% - 380px) 380px;
+    width: calc(100% - 64px);
+    max-width: 1290px;
+    margin: 32px auto;
+    padding: 0;
+  }
+
+  @media (min-width: 700px) {
+    main .related-articles h3 {
+      font-size: var(--heading-font-size-s);
+    }
+  }
+  

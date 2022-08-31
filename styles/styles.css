@@ -313,3 +313,21 @@ main .section.yellow {
 .blog {
   color: #244958;
 }
+
+/* Blog side menu - Related Articles */
+.blog-post .related-articles-container {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+}
+
+.blog-post .related-articles-container > * {
+  grid-column: 1;
+}
+
+.blog-post .related-articles-container > .related-articles-wrapper {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  align-self: flex-start;
+  margin: 0px;
+}
