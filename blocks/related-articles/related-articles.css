@@ -6,101 +6,35 @@ main .section.sidebar .related-articles-container {
   max-width: 350px;
 }
 
-/* sidebar: first article */
-main .section.sidebar .related-articles > div:first-child {
+main .section.sidebar .related-articles > div {
   display: flex;
-  flex: 0 1 auto;
-  max-height: 170px;
   border-top: 1px solid blue;
   padding-top: 2%;
   padding-bottom: 2%;
-  margin-bottom: 3%;
 }
 
-main .section.sidebar .related-articles > div:first-child > div:last-child > p {
-  vertical-align: baseline;
+main .section.sidebar .related-articles > div > div:last-child > p {
   padding-left: 5%;
   margin: 0;
 }
 
-main .section.sidebar .related-articles > div:first-child > div:first-child picture img {
-  margin: 0;
-  height: auto;
-  width: 100%;
+main .section.sidebar .related-articles > div > div:first-child img {
+  max-height: 100px;
+  max-width: 250px;
 }
 
-main .section.sidebar .related-articles > div:first-child > div:last-child > p:first-child {
+main .section.sidebar .related-articles > div > div:last-child > p:first-child {
   font-size: 0.55em;
 }
 
-main .section.sidebar .related-articles > div:first-child > div:last-child > p:nth-child(2) {
+main .section.sidebar .related-articles > div > div:last-child > p:nth-child(2) {
   font-size: 0.7em;
   margin-top: 0;
   font-weight: bold;
   color: black;
 }
 
-main .section.sidebar .related-articles > div:first-child > div:last-child > p:nth-child(3) {
-  font-size: 0.5em;
-}
-
-/* sidebar: second article */
-main .section.sidebar .related-articles > div:nth-child(2) {
-  display: flex;
-  max-height: 170px;
-  border-top: 1px solid blue;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-main .section.sidebar .related-articles > div:nth-child(2) > div:last-child > p {
-  vertical-align: baseline;
-  padding-left: 5%;
-  margin: 0;
-}
-
-main .section.sidebar .related-articles > div:nth-child(2) > div:last-child > p:first-child {
-  font-size: 0.55em;
-}
-
-main .section.sidebar .related-articles > div:nth-child(2) > div:last-child > p:nth-child(2) {
-  font-size: 0.7em;
-  margin-top: 0;
-  font-weight: bold;
-  color: black;
-}
-
-main .section.sidebar .related-articles > div:nth-child(2) > div:last-child > p:nth-child(3) {
-  font-size: 0.5em;
-}
-
-/* sidebar: third article */
-main .section.sidebar .related-articles > div:nth-child(3) {
-  display: flex;
-  max-height: 170px;
-  border-top: 1px solid blue;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-main .section.sidebar .related-articles > div:nth-child(3) > div:last-child > p {
-  vertical-align: baseline;
-  padding-left: 5%;
-  margin: 0;
-}
-
-main .section.sidebar .related-articles > div:nth-child(3) > div:last-child > p:first-child {
-  font-size: 0.55em;
-}
-
-main .section.sidebar .related-articles > div:nth-child(3) > div:last-child > p:nth-child(2) {
-  font-size: 0.7em;
-  margin-top: 0;
-  font-weight: bold;
-  color: black;
-}
-
-main .section.sidebar .related-articles > div:nth-child(3) > div:last-child > p:nth-child(3) {
+main .section.sidebar .related-articles > div > div:last-child > p:nth-child(3) {
   font-size: 0.5em;
 }
 
