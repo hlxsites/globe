@@ -252,6 +252,12 @@ img {
     max-width: 1200px;
     margin: auto;
   }
+
+  main .section.content-body {
+    width: 50vw;
+    text-align: left;
+    margin-left: 20%;
+  }
 }
 
 /* progressive section appearance */
@@ -312,4 +318,17 @@ main .section.yellow {
 
 .blog {
   color: #244958;
+}
+
+main .section .default-content-wrapper > h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+main .bio-container {
+  padding-bottom: 0;
+}
+
+main .bio-container .default-content-wrapper {
+  font-size: 0.8em;
 }
