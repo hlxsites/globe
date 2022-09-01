@@ -12,7 +12,7 @@ main .banner-container {
 
 main .banner {
     position: relative;
-    min-height: 300px;
+    min-height: 320px;
     border-bottom: 3px solid rgb(0, 116, 217);
 }
 
@@ -22,6 +22,8 @@ main .banner h3, h4 {
     color: white;
     background-color: rgba(0,0,0,0.3);
     margin: 0px;
+    font-size: 15px;
+    padding-left: 7%;
 }
 
 
@@ -37,7 +39,16 @@ main .banner picture {
 }
 
 main .banner img {
-    object-fit: cover;
-    width: 100%;
+    object-position: 95%;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width:900px) {
+    main .banner img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    } 
 }
