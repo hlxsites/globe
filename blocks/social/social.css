@@ -9,7 +9,7 @@
     padding-bottom: 6%;
 }
 
-.social {
+.social.mobile {
     display: inline;
     position: relative;
     max-width: 1200px;
@@ -20,76 +20,46 @@
     font-size: 15px;
 }
 
-.social > div > div > picture {
+.social.mobile > div > div > picture {
     display: block;
-    float: right; 
+    float: right;
     padding-top: 1%;
     padding-left: 1%; 
 }
 
-.social > div > div > picture:last-child {
-    display: none;
-}
-
-.social > div > div > picture:nth-last-child(2) {
-    display: none;
-}
-
-.social > div > div > picture:nth-last-child(3) {
-    display: none;
-}
-
-.social > div > div > picture:nth-last-child(4) {
+.social-icon.desktop {
     display: none;
 }
 
 @media (min-width: 900px) {
-    .social-wrapper {
-        padding-top: 2%;
+    .social.mobile {
+        display: none;
+    }
+
+    .social-icon-wrapper {
+        padding-top: 0;
         padding-bottom: 6%;
-        width: auto;
     }
 
-    .social > div > div {
-        width: auto;
+    .social-wrapper {
+        padding: 1%;
+    }
+    
+    .social-icon.desktop {
+        display: inline;
+        position: relative;
+        max-width: 1200px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        color: #244958;
+        font-size: 15px;
     }
 
-    .social > div > div > picture {
+    .social-icon.desktop > div > div > picture {
         display: block;
-        float: right; 
-        padding-left: 1%;
+        float: right;
+        padding-top: 1%;
+        padding-left: 1%; 
     }
-
-    .social > div > div > picture:first-child {
-        display: none;
-    }
-    
-    .social > div > div > picture:nth-child(2) {
-        display: none;
-    }
-    
-    .social > div > div > picture:nth-child(3) {
-        display: none;
-    }
-    
-    .social > div > div > picture:nth-child(4) {
-        display: none;
-    }
-
-    .social > div > div > picture:last-child {
-        display: block;
-    }
-    
-    .social > div > div > picture:nth-last-child(2) {
-        display: block;
-    }
-    
-    .social > div > div > picture:nth-last-child(3) {
-        display: block;
-    }
-    
-    .social > div > div > picture:nth-last-child(4) {
-        display: block;
-    }
-
 }
