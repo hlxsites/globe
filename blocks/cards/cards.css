@@ -18,6 +18,10 @@
     margin: 16px;
 }
 
+.cards .cards-card-body p {
+    color: black;
+}
+
 .cards .cards-card-body > p:first-child {
     font-size: 0.55em;
 }

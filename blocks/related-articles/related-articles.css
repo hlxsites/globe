@@ -11,6 +11,7 @@ main .section.sidebar .related-articles > div {
   border-top: 1px solid blue;
   padding-top: 2%;
   padding-bottom: 2%;
+  color: black;
 }
 
 main .section.sidebar .related-articles > div > div:last-child > p {

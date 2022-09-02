@@ -325,8 +325,9 @@ main .section.yellow {
   color: #244958;
 }
 
-main .section .default-content-wrapper > h1 {
+main .section .default-content-wrapper h1 {
   font-size: 40px;
+  font-weight: 50px;
   font-weight: bold;
 }
 
