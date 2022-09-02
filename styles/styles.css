@@ -257,7 +257,11 @@ img {
     width: 45vw;
     text-align: left;
     margin-left: 20%;
-    padding-top: 3%;
+    padding-top: 4%;
+  }
+
+  main .section.sidebar {
+    padding: 1%;
   }
 }
 
