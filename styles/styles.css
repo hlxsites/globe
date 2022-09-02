@@ -254,9 +254,10 @@ img {
   }
 
   main .section.content-body {
-    width: 50vw;
+    width: 45vw;
     text-align: left;
     margin-left: 20%;
+    padding-top: 3%;
   }
 }
 
