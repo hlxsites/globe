@@ -4,23 +4,19 @@
     max-width: unset;
 }
   
-.tagdate-container {
+.tagdate-wrapper {
     padding: 0;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .tagdate {
     position: relative;
-    padding-top: 15px;
-    padding-right: 32px;
-    padding-bottom: 20px;
-    padding-left: 32px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding-top: 25px 32px 20px 32px;
+    margin-top: 0;
+    margin-bottom: 0;
     max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;
     border-bottom: 2px solid #1C91C5;
     color: #244958;
     font-size: 13px;
@@ -28,4 +24,65 @@
 
 .tagdate a {
     color: #244958;
+}
+
+.tagdate > div > div {
+    display: flex;
+}
+
+.tagdate > div > div p:first-child {
+    padding-right: 35%;
+    width: 120px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.tagdate > div > div p:first-child .icon {
+    padding-right: 1%;
+}
+
+.tagdate > div > div p:first-child a:nth-child(3) {
+    padding-left: 10%;
+}
+
+.tagdate > div > div p:first-child a:nth-child(4) {
+    padding-left: 10%;
+}
+
+.tagdate > div > div p:last-child {
+    padding-left: 4%;
+    padding-top: 7%;
+    font-size: 0.9em;
+    border-left: 1px solid grey;
+    color: black;
+}
+
+@media (min-width: 900px) {
+    .tagdate > div > div {
+        display: flex;
+    }
+
+    .tagdate > div > div p:last-child {
+        width: 100%;
+        padding-left: 4%;
+        padding-top: 1%;
+        font-size: 0.9em;
+        border-left: 1px solid grey;
+        color: black;
+    }
+
+    .tagdate > div > div p:first-child {
+        padding-right: 0;
+        width: 75%;
+    }
+
+    .tagdate > div > div p:first-child a:nth-child(3) {
+        padding-left: 0;
+    }
+    
+    .tagdate > div > div p:first-child a:nth-child(4) {
+        padding-left: 0;
+    }
+
 }
