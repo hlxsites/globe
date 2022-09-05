@@ -139,16 +139,20 @@ main .article-header-share img {
 } */
 
 @media (min-width: 900px) {
-  main .article-header {
-    border: 2px solid red;
-    margin: 0; 
+  main .article-header img {
+    height: 380px;
+    width: 100%;
   }
   
-  main .article-header > picture img {
-    border: 2px solid red;
-    margin: 0;
-    max-width: 100%;
+  main .article-header h1 {
+    padding-left: 20%;
+    padding-right: 30%;
   }
+
+  /*
+  main  img {
+    border: 2px solid red;
+  } */
 
   /* main .article-header-eyebrow {
     font-size: 18px;

@@ -656,11 +656,11 @@ async function buildAutoBlocks(main) {
  * Decorates the main element.
  * @param {Element} main The main element
  */
-export function decorateMain(main) {
+export async function decorateMain(main) {
   // hopefully forward compatible button decoration
   decorateButtons(main);
   /* decorateIcons(main); */
-  buildAutoBlocks(main);
+  await buildAutoBlocks(main);
   decorateSections(main);
   decorateBlocks(main);
   sampleRUM.observe(main.querySelectorAll('div[data-block-name]'));
@@ -674,7 +674,7 @@ async function loadEager(doc) {
   decorateTemplateAndTheme();
   const main = doc.querySelector('main');
   if (main) {
-    decorateMain(main);
+    await decorateMain(main);
     await waitForLCP();
   }
 }

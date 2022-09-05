@@ -221,8 +221,51 @@ img {
 
 main img {
   margin: 0;
+  width: auto;
+}
+
+main .article-header img {
+  height: 380px;
   width: 100%;
-  border-bottom: 4px solid blue;
+}
+
+main .article-header h1 {
+  padding-left: 20%;
+  padding-right: 30%;
+}
+
+/* main .article-header > div:nth-child(3) > div > p > span {
+  border-bottom: 1px solid grey;
+} */
+
+main .article-header > div:nth-child(3) > div > p > span:first-child {
+  padding-left: 20%; 
+  border-right: 1px solid grey;
+  padding-right: 5%;
+  font-size: 0.6em;
+}
+
+main .article-header > div:nth-child(3) > div > p > span:last-child {
+  font-size: 0.6em;
+  padding-left: 5%; 
+}
+
+
+/* main .article-header > div:nth-child(3) > div > p > span:first-child::after {
+  white-space: pre;
+  content: "\a";
+} */
+
+
+main .banner h3, h4 {
+  max-width: unset;
+  padding: 15px;
+  color: white;
+
+  /* background-color: rgba(0,0,0,0.3); */
+  margin: 0;
+  font-size: 15px;
+  padding-left: 7%;
 }
 
 hr {
@@ -333,4 +376,12 @@ main .section .default-content-wrapper h1 {
   font-size: 40px;
   font-weight: 50px;
   font-weight: bold;
+}
+
+main .bio-container {
+  padding-bottom: 0;
+}
+
+main .bio-container .default-content-wrapper {
+  font-size: 0.8em;
 }

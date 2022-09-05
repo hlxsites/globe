@@ -128,7 +128,7 @@ function buildAuthorContainer(main) {
 export default async function decorateTemplate(main) {
   const isBlog = buildArticleHeader(main);
   if (isBlog) {
-    buildImageBlocks(main);
+    // buildImageBlocks(main);
     const related = main.querySelector('.related-posts');
     if (related) related.parentElement.insertBefore(buildBlock('author', [['']]), related);
     if (related && !related.nextElementSibling && !related.parentElement.nextElementSibling) {
