@@ -23,7 +23,7 @@ export async function lookupPages(pathnames, collection) {
 }
 
 export function formatDate(dateString) {
-  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
   const [year, month, day] = dateString.split('-').map((n) => +n);
   return `${months[month - 1]} ${day}, ${year}`;
 }
@@ -32,24 +32,6 @@ export function toCategory(category) {
   let categoryName = toClassName(category);
   while (categoryName.includes('--')) categoryName = categoryName.replace('--', '-');
   return categoryName;
-}
-
-function buildImageBlocks(main) {
-  let floatCounter = 0;
-  main.querySelectorAll(':scope > div > p > picture, :scope > div > p > a > picture').forEach((picture) => {
-    const up = picture.parentElement;
-    const p = picture.closest('p');
-    const div = p.parentElement;
-    const nextSib = p.nextElementSibling;
-    if ([...up.children].length === 1) {
-      const imgBlock = buildBlock('image', { elems: [up] });
-      if (up.tagName === 'A') {
-        div.insertBefore(imgBlock, p);
-        imgBlock.classList.add(floatCounter % 2 ? 'left' : 'right');
-        floatCounter += 1;
-      } else div.insertBefore(imgBlock, nextSib);
-    }
-  });
 }
 
 function getShareButtons() {
@@ -88,7 +70,6 @@ function getShareButtons() {
 
 function buildArticleHeader(main) {
   try {
-    const author = getMetadata('author');
     const publicationDate = getMetadata('publication-date');
     const tags = getMetadata('article:tag') || '';
     const h1 = document.querySelector('h1');
@@ -98,8 +79,9 @@ function buildArticleHeader(main) {
       const section = document.createElement('div');
       section.append(buildBlock('article-header', [
         [picture],
+        ['NEWSROOM'],
         [h1],
-        [`<p><span>${tags}</span>${author ? `<span>${author}</span>` : ''}<span>${formatDate(publicationDate)}</span></p>`],
+        [`<p><span>${tags}</span><span>${formatDate(publicationDate)}</span></p>`],
         [`<p>Share this on ${getShareButtons()}</p>`],
       ]));
       main.prepend(section);

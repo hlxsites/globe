@@ -1,4 +1,3 @@
-import { toClassName } from '../../scripts/scripts.js';
 import { formatDate, toCategory } from '../../scripts/blog.js';
 
 function applyClasses(styles, elements, prefix) {
@@ -36,18 +35,9 @@ function createSharing() {
 }
 
 export default async function decorateArticleHeader($block, blockName) {
-  applyClasses(['image', 'eyebrow', 'title', 'author-pub'], $block.children, blockName);
-  applyClasses(['category', 'read-time'], $block.querySelector('.article-header-eyebrow').firstChild.children, blockName);
-  applyClasses(['publication-date', 'updated-date'], $block.querySelector('.article-header-author-pub').firstChild.children, blockName);
-
-  // link author
-  // const $author = $block.querySelector(`.${blockName}-author`);
-  // const author = $author.textContent;
-  // const a = document.createElement('a');
-  // a.href = `/blog/author/${toClassName(author)}`;
-  // a.textContent = author;
-  // $author.textContent = '';
-  // $author.append(a);
+  applyClasses(['image', 'eyebrow', 'title', 'tags-pub'], $block.children, blockName);
+  applyClasses(['category'], $block.querySelector('.article-header-eyebrow').firstChild.children, blockName);
+  applyClasses(['publication-date'], $block.querySelector('.article-header-tags-pub').firstChild.children, blockName);
 
   const category = $block.querySelector('.article-header-category');
   category.innerHTML = `<a href="/blog/category/${toCategory(category.textContent)}">${category.textContent}</a>`;
@@ -56,18 +46,10 @@ export default async function decorateArticleHeader($block, blockName) {
   const $pubdate = $block.querySelector(`.${blockName}-publication-date`);
   $pubdate.textContent = formatDate($pubdate.textContent);
 
-  const $update = $block.querySelector(`.${blockName}-updated-date`);
-  if ($update.textContent) $update.textContent = formatDate($update.textContent);
-
   // sharing + progress
   $block.append(createSharing());
   const progress = createProgress();
   $block.append(progress);
-
-  const newsroom = document.createElement('div');
-  newsroom.className = 'article-header-newsroom';
-  newsroom.textContent = 'NEWSROOM';
-  $block.prepend(newsroom);
 
   document.addEventListener('scroll', () => {
     progress.setAttribute('value', window.scrollY);
