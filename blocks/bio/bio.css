@@ -1,0 +1,34 @@
+/* block specific CSS goes here */
+
+.bio > div {
+    max-width: unset;
+}
+  
+.bio-container {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bio {
+    position: relative;
+    padding-top: 15px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1200px;
+    margin-right: auto;
+    border-bottom: 2px solid #1C91C5;
+    background-color: #f7f7f7;
+    color: #244958;
+    font-size: 14px;
+}
+
+.bio a {
+    color: #244958;
+}
+
+.bio h6 {
+    font-weight: bold;
+}
