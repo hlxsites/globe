@@ -215,14 +215,14 @@ main blockquote p::after {
 }
 
 img {
-  max-width: 100%;
   width: auto;
   height: auto;
 }
 
 main img {
-  display: block;
-  margin: auto;
+  margin: 0;
+  width: 100%;
+  border-bottom: 4px solid blue;
 }
 
 hr {
@@ -247,6 +247,10 @@ hr {
     --heading-font-size-s: 24px;
     --heading-font-size-xs: 22px;
   } */
+
+  .article-header > div {
+    max-width: 1800px;
+  }
 
   .section > div {
     max-width: 1200px;
