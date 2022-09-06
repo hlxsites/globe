@@ -1,57 +1,142 @@
-main .section.sidebar .default-content-wrapper {
+main .section > .related-articles-wrapper {
+  max-width: unset;
+  background-color: var(--color-gray-1);
+  background-image: url('../../styles/related-articles-leaf.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  padding: 0;
+  margin-top: 0;
+}
+
+main  .section > .related-articles-wrapper::before {
+  content: 'RELATED ARTICLES';
+  display: block;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  max-width: 1200px;
+  margin: auto;
+  color: var(--heading-color);
+}
+
+main .related-articles {
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main .related-articles-card {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
   font-size: 15px;
 }
 
-main .section.sidebar .related-articles-container {
-  max-width: 350px;
+main .related-articles-card-header {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--category-color);
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 12px;
 }
 
-main .section.sidebar .related-articles > div {
-  display: flex;
-  border-top: 1px solid blue;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  color: black;
+main .related-articles-card-header a:any-link {
+  color: inherit;
+  text-decoration: inherit;
 }
 
-main .section.sidebar .related-articles > div > div:last-child > p {
-  padding-left: 5%;
-  margin: 0;
+main .related-articles-card .related-articles-card-picture {
+  margin-bottom: 25px;
 }
 
-main .section.sidebar .related-articles > div > div:first-child img {
-  max-height: 100px;
-  max-width: 250px;
+main .related-articles-card img {
+  width: 100%;
+  box-shadow: var(--box-shadow-2);
+  border-radius: 15px;
 }
 
-main .section.sidebar .related-articles > div > div:last-child > p:first-child {
-  font-size: 0.55em;
+main .related-articles-card h3 {
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0 0 20px;
 }
 
-main .section.sidebar .related-articles > div > div:last-child > p:nth-child(2) {
-  font-size: 0.7em;
-  margin-top: 0;
-  font-weight: bold;
-  color: black;
+main .related-articles-card .related-articles-card-readtime::before {
+  content: '•';
+  display: inline-block;
+  margin: 1px 8px 0 4px;
+  font-size: 10px;
+  vertical-align: top;
 }
 
-main .section.sidebar .related-articles > div > div:last-child > p:nth-child(3) {
-  font-size: 0.5em;
+main .related-articles-card .related-articles-card-readtime:empty::before {
+  display: none;
+}
+
+main .related-articles-card-body a:any-link{
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-size: 15px;
+}
+
+main .related-articles-card-body a:any-link::after {
+  content: "";
+  border: solid var(--heading-color);
+  border-width: 0 2.5px 2.5px 0;
+  display: inline-block;
+  padding: 2.5px;
+  transform: rotate(-45deg) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: -20px; 
+}
+
+
+@media (min-width: 600px) {
+  main .related-articles-card {
+      width: 50%;
+  }
 }
 
 @media (min-width: 900px) {
-  main .section.sidebar .related-articles {
-    width: 20vw;
-    position: absolute;
-    right: 5%;
-    top: 825px;
+  main .related-articles-card {
+    width: 35%;
+  } 
+
+  main .related-articles-container.related-articles-cols {
+    position: relative;
+    display: grid;
+    grid-template-columns: calc(100% - 380px) 380px;
+    width: calc(100% - 64px);
+    max-width: 1290px;
+    margin: 32px auto;
+    padding: 0;
   }
 
-  main .section.sidebar .default-content-wrapper {
-    width: 20vw;
-    font-size: 15px;
+  main .section.sidebar .related-articles-wrapper {
+    width: 55vw;
     position: absolute;
-    right: 5%;
-    top: 770px;
+    top: 930px;
+    right: -30%;
+  }
+
+  main .section.sidebar .related-articles-wrapper::before {
+    padding-left: 1%;
   }
 }
+
+  @media (min-width: 700px) {
+    main .related-articles h3 {
+      font-size: var(--heading-font-size-s);
+    }
+  }

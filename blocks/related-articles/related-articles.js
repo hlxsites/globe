@@ -1,4 +1,3 @@
-
 import { getMetadata } from '../../scripts/scripts.js';
 import { lookupPages } from '../../scripts/blog.js';
 import { filterArticles } from '../article-feed/article-feed.js';

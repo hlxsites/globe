@@ -73,6 +73,8 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body.appear {
@@ -258,14 +260,25 @@ hr {
     --heading-font-size-xs: 22px;
   } */
 
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .section > div {
-    max-width: 1200px;
     margin: auto;
   }
 
-  main .section.content-body {
+  main .section.bio-container {
     width: 45vw;
     text-align: left;
+    margin-left: 20%;
+    padding-top: 4%;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-child(2) {
+    /* width: 45vw;
+    text-align: left; */
     margin-left: 20%;
     padding-top: 4%;
   }
@@ -341,10 +354,17 @@ main .section .default-content-wrapper h1 {
   font-weight: bold;
 }
 
-main .bio-container {
+main .section.bio-container {
   padding-bottom: 0;
+  padding-top: 5%;
+}
+
+main .section.bio-container img {
+  max-width: 100%;
 }
 
 main .bio-container .default-content-wrapper {
   font-size: 0.8em;
+  max-width: 100%;
 }
+

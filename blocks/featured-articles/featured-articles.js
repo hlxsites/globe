@@ -1,6 +1,10 @@
 import { createOptimizedPicture } from '../../scripts/scripts.js';
 import { lookupPages, toCategory } from '../../scripts/blog.js';
 
+function formatDate(date) {
+  return new Date(Math.round((+date - (1 + 25567 + 1)) * 86400 * 1000));
+}
+
 export function createBlogCard(article, classPrefix, eager = false) {
   const title = article.title.split(' - ')[0];
   const card = document.createElement('div');
@@ -23,7 +27,7 @@ export function createBlogCard(article, classPrefix, eager = false) {
     <div class="${classPrefix}-card-body">
     <h3>${title}</h3>
     <p>${article.description}</p>
-    <p><a href="${article.path}">Read Now</a></p>
+    <p>${formatDate(article['publication-date'])}</p>
     </div>`;
   return (card);
 }
