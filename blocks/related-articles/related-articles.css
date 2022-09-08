@@ -1,5 +1,9 @@
+main .section.sidebar {
+  padding-top: 0;
+}
+
 main .section > .related-articles-wrapper {
-  max-width: unset;
+  /* max-width: unset; */
   background-color: var(--color-gray-1);
   background-image: url('../../styles/related-articles-leaf.png');
   background-repeat: no-repeat;
@@ -7,6 +11,9 @@ main .section > .related-articles-wrapper {
   background-size: contain;
   padding: 0;
   margin-top: 0;
+  max-width: 350px;
+  position: relative;
+  left: 5%;
 }
 
 main  .section > .related-articles-wrapper::before {
@@ -20,19 +27,25 @@ main  .section > .related-articles-wrapper::before {
   max-width: 1200px;
   margin: auto;
   color: var(--heading-color);
+  margin-bottom: 20px;
 }
 
 main .related-articles {
-  flex-wrap: wrap;
-  max-width: 1200px;
+  /* flex-wrap: wrap; */
+  max-width: 350px;
   margin: auto;
+  z-index: 10;
 }
 
 main .related-articles-card {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
+  max-width: 350px;
   font-size: 15px;
+  border-top: 1px solid blue;
+  min-height: 160px;
+  height: auto;
 }
 
 main .related-articles-card-header {
@@ -40,9 +53,11 @@ main .related-articles-card-header {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: var(--category-color);
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 12px;
+  left: 45%;
+  position: absolute;
+  margin-top: 3%;
 }
 
 main .related-articles-card-header a:any-link {
@@ -51,92 +66,67 @@ main .related-articles-card-header a:any-link {
 }
 
 main .related-articles-card .related-articles-card-picture {
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
+  margin-top: 3%;
 }
 
 main .related-articles-card img {
-  width: 100%;
-  box-shadow: var(--box-shadow-2);
-  border-radius: 15px;
+  max-width: 38vw;
+  height: 125px;
+  object-position: 70%;
+  object-fit: cover;
 }
 
 main .related-articles-card h3 {
   font-family: var(--heading-font-family);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   font-style: normal;
   margin: 0 0 20px;
 }
 
-main .related-articles-card .related-articles-card-readtime::before {
-  content: '•';
-  display: inline-block;
-  margin: 1px 8px 0 4px;
-  font-size: 10px;
-  vertical-align: top;
+main .related-articles-card p:last-child {
+  font-size: 12px;
 }
 
-main .related-articles-card .related-articles-card-readtime:empty::before {
-  display: none;
-}
-
-main .related-articles-card-body a:any-link{
-  position: relative;
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--heading-color);
-  font-family: var(--heading-font-family);
-  font-size: 15px;
-}
-
-main .related-articles-card-body a:any-link::after {
-  content: "";
-  border: solid var(--heading-color);
-  border-width: 0 2.5px 2.5px 0;
-  display: inline-block;
-  padding: 2.5px;
-  transform: rotate(-45deg) translateY(-50%);
+main .related-articles-card-body {
+  width: auto;
+  left: 45%;
+  top: 20%;
+  white-space: initial;
+  word-wrap: break-word;
+  margin-top: 2%;
   position: absolute;
-  top: 50%;
-  right: -20px; 
-}
-
-
-@media (min-width: 600px) {
-  main .related-articles-card {
-      width: 50%;
-  }
+  height: auto;
+  max-height: max-content;
 }
 
 @media (min-width: 900px) {
-  main .related-articles-card {
-    width: 35%;
-  } 
-
-  main .related-articles-container.related-articles-cols {
-    position: relative;
-    display: grid;
-    grid-template-columns: calc(100% - 380px) 380px;
-    width: calc(100% - 64px);
-    max-width: 1290px;
-    margin: 32px auto;
-    padding: 0;
-  }
-
   main .section.sidebar .related-articles-wrapper {
-    width: 55vw;
+    width: 20vw;
     position: absolute;
-    top: 930px;
-    right: -30%;
+    top: 980px;
+    right: 2%;
+    left: 65%;
+  }  
+
+  main .related-articles-card {
+    max-height: fit-content; 
+    min-height: 150px;
+    margin-bottom: 0;
+    height: auto;
+    clear: right;
   }
 
-  main .section.sidebar .related-articles-wrapper::before {
-    padding-left: 1%;
+  main .related-articles-card img {
+    max-width: 8vw;
+    max-height: 110px;
+    object-position: 70%;
+    object-fit: cover;
+  }
+
+  main .related-articles-card-header {
+    overflow: hidden;
   }
 }
 
-  @media (min-width: 700px) {
-    main .related-articles h3 {
-      font-size: var(--heading-font-size-s);
-    }
-  }

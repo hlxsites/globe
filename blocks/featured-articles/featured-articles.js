@@ -2,7 +2,13 @@ import { createOptimizedPicture } from '../../scripts/scripts.js';
 import { lookupPages, toCategory } from '../../scripts/blog.js';
 
 function formatDate(date) {
-  return new Date(Math.round((+date - (1 + 25567 + 1)) * 86400 * 1000));
+  const d = new Date(Math.round((+date - (1 + 25567 + 1)) * 86400 * 1000));
+  d.setMonth(d.getMonth());
+  const monthName = d.toLocaleString('default', { month: 'short' });
+  const suffix = d.getHours() >= 12 ? 'PM' : 'AM';
+  const hours = (((d.getHours() + 11) % 12) + 1);
+  const dateNew = monthName + ' ' + d.getDate() + ', ' + d.getFullYear() + '   |   ' + hours  + ':' + d.getMinutes() + ' ' + suffix;
+  return dateNew;
 }
 
 export function createBlogCard(article, classPrefix, eager = false) {
