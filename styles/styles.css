@@ -223,6 +223,7 @@ img {
 
 main img {
   margin: 0;
+  display: block;
   width: auto;
 }
 
@@ -248,6 +249,23 @@ hr {
   main .section {
     padding: 64px 32px;
   }
+
+  main .section.bio-container .default-content-wrapper p:nth-child(2) img {
+    padding-top: 4%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-last-child(2) img {
+    width: 80%;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-last-child(4) img {
+    width: 80%;
+  }
+
 }
 
 @media (min-width: 900px) {
@@ -271,16 +289,24 @@ hr {
 
   main .section.bio-container {
     width: 45vw;
-    text-align: left;
-    margin-left: 20%;
+    margin-left: 21%;
     padding-top: 4%;
   }
 
-  main .section.bio-container .default-content-wrapper p:nth-child(2) {
-    /* width: 45vw;
-    text-align: left; */
-    margin-left: 20%;
+  main .section.bio-container .default-content-wrapper p:nth-child(2) img {
     padding-top: 4%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-last-child(2) img {
+    width: 80%;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-last-child(4) img {
+    width: 80%;
   }
 
   main .section.sidebar {
@@ -356,15 +382,21 @@ main .section .default-content-wrapper h1 {
 
 main .section.bio-container {
   padding-bottom: 0;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
-main .section.bio-container img {
-  max-width: 100%;
+main .section.bio-container .default-content-wrapper img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main .bio-container .default-content-wrapper {
   font-size: 0.8em;
-  max-width: 100%;
+}
+
+main .section.sidebar {
+  padding: 0;
+  margin-bottom: 30px;
 }
 
