@@ -18,11 +18,8 @@ main .section > .latest-news-wrapper {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    width: 1200px;
-    margin: auto;
     color: var(--heading-color);
     margin-bottom: 20px;
-    margin-left: -3%;
   }
   
   main .latest-news {
@@ -40,9 +37,8 @@ main .section > .latest-news-wrapper {
     width: 345px;
     font-size: 15px;
     margin-bottom: 20px;
-    display:flex;
+    display: flex;
     flex-flow: column;
-
   }
 
   main .latest-news-card-header {
@@ -135,7 +131,10 @@ main .section > .latest-news-wrapper {
     }
 
     main .section .latest-news {
+      margin: 0 auto;
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       /* grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); */
       width: auto;
       column-gap: 12px;
@@ -146,14 +145,14 @@ main .section > .latest-news-wrapper {
     }
 
     main .latest-news-card .latest-news-card-picture {
-      width: 18.5vw;
+      width: 100%;
       order: 0;
     }
   
     main .latest-news-card .latest-news-card-picture img {
       object-fit: cover;
       object-position: 80%;
-      max-width: 25vw;
+      max-width: 100%;
       height: 200px;
       order: 1;
       margin-right: 0;
