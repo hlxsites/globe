@@ -29,36 +29,24 @@ export default async function decorate(block) {
     // decorate nav DOM
     const nav = document.createElement('nav');
     nav.innerHTML = html;
+    decorateIcons(nav);
 
-    const classes = ['brand', 'site', 'primary', 'helper', 'signin', 'search'];
+    const classes = ['brand', 'sections', 'tools'];
     classes.forEach((e, j) => {
       const section = nav.children[j];
       if (section) section.classList.add(`nav-${e}`);
     });
 
-    const navSections = nav.querySelector('.nav-primary');
+    const navSections = [...nav.children][1];
     if (navSections) {
       navSections.querySelectorAll(':scope > ul > li').forEach((navSection) => {
-        if (navSection.querySelector('ul')) {
-          navSection.classList.add('nav-drop');
-          const ul = navSection.querySelector('ul');
-          const title = navSection.innerHTML.split('<')[0].trim();
-          navSection.innerHTML = `<span>${title}</span>${ul.outerHTML}`;
-          navSection.setAttribute('aria-expanded', false);
-          navSection.addEventListener('click', () => {
-            const expanded = navSection.getAttribute('aria-expanded') === 'true';
-            collapseAllNavSections(navSections);
-            navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-          });
-        }
+        if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
+        navSection.addEventListener('click', () => {
+          const expanded = navSection.getAttribute('aria-expanded') === 'true';
+          collapseAllNavSections(navSections);
+          navSection.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        });
       });
-    }
-
-    const signin = nav.querySelector('.nav-signin');
-    if (signin) {
-      const a = signin.querySelector('a');
-      const icon = a.querySelector('.icon');
-      a.innerHTML = `${icon.outerHTML}<span class="nav-signin-text">${a.textContent}</span>`;
     }
 
     // hamburger for mobile

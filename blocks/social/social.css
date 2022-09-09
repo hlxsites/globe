@@ -1,40 +1,55 @@
-/* block specific CSS goes here */
+main .social-wrapper .social > p {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0;
+  } 
 
-.social > div {
-    max-width: unset;
-}
+  main .social-wrapper .social > p > p > span:first-child {
+    font-size: 14px;
+  }
   
-.social-container {
-    padding: 0;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  main .social-wrapper .social > p > p > span:last-child {
+    padding-top: 2%;
+    padding-left: 30%;
+  }
+  
+  main .social-wrapper .social > p > p > span:last-child a {
+    margin-left: 2%;
+    text-decoration: none;
+  }
+  
+  main .social-wrapper .social > p .share-buttons a .share-button-label {
+    display: none;
+    visibility: hidden;
+  } 
+
+@media (min-width: 900px) {
+    main .social-wrapper .social > p > p {
+        width: 45vw;
+      }  
+    
+      main .social-wrapper .social > p > p > span:last-child {
+        padding-top: 2%;
+      }
+
+      main .social-wrapper .social > p > p > span:last-child .share-buttons {
+        width: 100%;
+        padding-left: 20%;
+      }
+
+      main .social-wrapper .social > p > p:last-child .share-buttons a {
+        margin-left: 0.5%;
+        text-decoration: none;
+      }
+      
+      main .social-wrapper .social > p > p > span:last-child a:last-child {
+        padding-right: 1%;
+      }
+      
+      main .social-wrapper .social > p .share-buttons a .share-button-label {
+        display: contents;
+        visibility: visible;
+        text-decoration: none;
+      } 
 }
 
-.social {
-    display: inline;
-    position: relative;
-    max-width: 1200px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #244958;
-    font-size: 15px;
-}
-
-.social a {
-  display: inline;
-  background-color: #244958;
-  border: none;
-  color: white;
-  border-radius: 3px 3px;
-  margin: 5px;
-  padding: 5px 5px;
-  text-align: center;
-  vertical-align: baseline;
-  text-decoration: none;
-  display: inline-block;
-  line-height: normal;
-  float: right;
-  font-size: 15px;
-}

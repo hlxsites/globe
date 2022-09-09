@@ -59,6 +59,11 @@
 
 }
 
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 @media (min-width: 1000px) {
   :root {
     --nav-height: 169px;
@@ -73,6 +78,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  position: relative;
 }
 
 body.appear {
@@ -214,9 +220,26 @@ main blockquote p::after {
   line-height: 0;
 }
 
+img {
+  width: auto;
+  height: auto;
+}
+
 main img {
+  margin: 0;
   display: block;
-  margin: auto;
+  width: auto;
+}
+
+main .banner h3, h4 {
+  max-width: unset;
+  padding: 15px;
+  color: white;
+
+  /* background-color: rgba(0,0,0,0.3); */
+  margin: 0;
+  font-size: 15px;
+  padding-left: 7%;
 }
 
 hr {
@@ -226,16 +249,27 @@ hr {
   border-bottom: 1px solid var(--overlay-background-color);
 }
 
-img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
 @media (min-width: 600px) {
   main .section {
     padding: 64px 32px;
   }
+
+  main .section.bio-container .default-content-wrapper p:nth-child(2) img {
+    padding-top: 4%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-last-child(2) img {
+    width: 80%;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-last-child(4) img {
+    width: 80%;
+  }
+
 }
 
 @media (min-width: 900px) {
@@ -248,9 +282,45 @@ img {
     --heading-font-size-xs: 22px;
   } */
 
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .section > div {
-    max-width: 1200px;
     margin: auto;
+  }
+
+  main .section.bio-container {
+    width: 45vw;
+    margin-left: 21%;
+    padding-top: 4%;
+  }
+
+  main .section.social-container {
+    width: 45vw;
+    margin-left: 21%;
+    padding-top: 4%;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-child(2) img {
+    padding-top: 4%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-last-child(2) img {
+    width: 80%;
+  }
+
+  main .section.bio-container .default-content-wrapper p:nth-last-child(4) img {
+    width: 80%;
+  }
+
+  main .section.sidebar {
+    padding: 1%;
   }
 }
 
@@ -314,20 +384,33 @@ main .section.yellow {
   color: #244958;
 }
 
-/* Blog side menu - Related Articles */
-.blog-post .related-articles-container {
-  display: grid;
-  grid-template-columns: 1fr min-content;
+main .section .default-content-wrapper h1 {
+  font-size: 40px;
+  font-weight: 50px;
+  font-weight: bold;
 }
 
-.blog-post .related-articles-container > * {
-  grid-column: 1;
+main .section.bio-container {
+  padding-bottom: 0;
+  padding-top: 2%;
 }
 
-.blog-post .related-articles-container > .related-articles-wrapper {
-  grid-column-start: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  align-self: flex-start;
-  margin: 0px;
+main .section.bio-container .default-content-wrapper img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .bio-container .default-content-wrapper {
+  font-size: 0.8em;
+  max-width: 100%;
+}
+
+main .section.social-container .default-content-wrapper {
+  font-size: 0.8em;
+}
+
+main .section.sidebar {
+  padding: 0;
+  margin-bottom: 30px;
 }

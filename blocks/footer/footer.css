@@ -20,9 +20,14 @@
 }
 
 .footer > div > div:nth-child(2) > p {
-  line-height: 10px;
+  line-height: 15px;
   font-size: 0.8em;
   font-weight: bold;
+}
+
+footer a:visited {
+  color: white;
+  text-decoration: none;
 }
 
 footer a:link {
