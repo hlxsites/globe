@@ -196,7 +196,7 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
       position: absolute;   
       top:20%;
       left: 4%;
-      color: lightskyblue;
+      color: #009cde;
       font-weight: bold;
   }
 
