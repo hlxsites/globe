@@ -1,5 +1,7 @@
-main .section.sidebar {
+main .section.related-articles-container {
   padding-top: 0;
+  padding-left: 0;
+  background-color: white;
 }
 
 main .section > .related-articles-wrapper {
@@ -24,7 +26,7 @@ main  .section > .related-articles-wrapper::before {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  max-width: 1200px;
+  max-width: auto;
   margin: auto;
   color: var(--heading-color);
   margin-bottom: 20px;
@@ -66,7 +68,6 @@ main .related-articles-card-header a:any-link {
 }
 
 main .related-articles-card .related-articles-card-picture {
-  /* margin-bottom: 25px; */
   margin-top: 3%;
 }
 
@@ -101,8 +102,34 @@ main .related-articles-card-body {
   max-height: max-content;
 }
 
-@media (min-width: 900px) {
-  main .section.sidebar .related-articles-wrapper {
+@media (min-width: 700px) and (max-width: 1190px) {
+  main .related-articles-wrapper {
+    margin-left: 25%;
+  }
+
+  main .related-articles-card {
+    max-height: fit-content; 
+    min-height: 150px;
+    margin-bottom: 0;
+    height: auto;
+    clear: right;
+    max-width: auto;
+  }
+
+  main .related-articles-card img {
+    max-width: 150px;
+    max-height: 110px;
+    object-position: 70%;
+    object-fit: cover;
+  }
+
+  main .related-articles-card-header {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .section.related-articles-container .related-articles-wrapper {
     width: 20vw;
     position: absolute;
     top: 980px;
