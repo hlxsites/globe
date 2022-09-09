@@ -37,13 +37,13 @@ main .social-wrapper .social > p {
         padding-left: 20%;
       }
 
-      main .social-wrapper .social > p > p > span:last-child a:last-child {
-        padding-right: 1%;
-      }
-      
       main .social-wrapper .social > p > p:last-child .share-buttons a {
         margin-left: 0.5%;
         text-decoration: none;
+      }
+      
+      main .social-wrapper .social > p > p > span:last-child a:last-child {
+        padding-right: 1%;
       }
       
       main .social-wrapper .social > p .share-buttons a .share-button-label {

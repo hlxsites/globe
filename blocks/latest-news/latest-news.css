@@ -135,8 +135,7 @@ main .section > .latest-news-wrapper {
     main .section .latest-news {
       margin: 0 auto;
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-flow: row wrap;
       width: auto;
       column-gap: 12px;
     }

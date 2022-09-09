@@ -42,12 +42,6 @@ header nav div:nth-child(5) p:last-child {
   display: none;
 }
 
-header nav div:nth-child(5) p .icon svg {
-  height: 25px;
-  padding-right: 10px;
-  fill: #009CDF;
-}
-
 header nav div:nth-child(6) p a u svg {
   position: absolute;
   width: 20px;
@@ -56,15 +50,21 @@ header nav div:nth-child(6) p a u svg {
   right: 5%;
 }
 
+header nav div:nth-child(5) p .icon svg {
+  height: 25px;
+  padding-right: 10px;
+  fill: #009CDF;
+}
+
+header nav div:nth-child(7) img {
+  width: 70px;
+  height: 25px;  
+}
+
 header nav div:nth-child(7) > p > picture img {
   position: absolute;
   left: 20%;
   top: 30%;
-}
-
-header nav div:nth-child(7) img {
-    width: 70px;
-    height: 25px;  
 }
 
 /* hamburger */
@@ -165,6 +165,21 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
       top: -5px;
   }
 
+  header nav .nav-tools p {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 0.6em;
+  }
+
+  header nav div:nth-child(5) p {
+    padding-left: 10px;
+    display: inline;  
+  }
+
+  header nav div:nth-child(7) p {
+    margin-bottom: 0;
+  } 
+
   header nav .nav-brand p:nth-child(6) {
     padding-right: 5%;
   }
@@ -176,16 +191,9 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
       right: 15%;
   }
 
-  header nav .nav-tools p {
-      display: inline-block;
-      padding-left: 20px;
-      font-size: 0.6em;
-  }
-
   header nav .nav-sections {
       display: block;
-      position: absolute;
-      display: block;   
+      position: absolute;   
       top:20%;
       left: 4%;
       color: lightskyblue;
@@ -205,13 +213,16 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
       font-size: 0.6em;
   }
 
-  header nav div:nth-child(5) p {
-    padding-left: 10px;
-    display: inline;  
-  }
-
   header nav div:nth-child(5) p:last-child {
     display: inline;
+  }
+
+  header nav div:nth-child(6) p a u svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 50%;
+    right: 5%;
   }
 
   header nav div:nth-child(5) p .icon svg {
@@ -221,26 +232,14 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
     fill: #009CDF;
   }
 
-  header nav div:nth-child(6) p a u svg {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      bottom: 50%;
-      right: 5%;
-  }
-
-  header nav div:nth-child(7) p {
-      margin-bottom: 0;
+  header nav div:nth-child(7) img {
+    width: 110px;
+    height: 40px;
   }
 
   header nav div:nth-child(7) > p > picture img {
     position: absolute;
     left: 7%;
     top: 60%;
-  }
-
-  header nav div:nth-child(7) img {
-      width: 110px;
-      height: 40px;  
   }
 }
