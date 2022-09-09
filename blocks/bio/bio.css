@@ -2,6 +2,7 @@
 
 .bio > div {
     max-width: unset;
+    padding-left: 5%;
 }
   
 .bio-container {
