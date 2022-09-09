@@ -7,7 +7,7 @@ function formatDate(date) {
   const monthName = d.toLocaleString('default', { month: 'short' });
   const suffix = d.getHours() >= 12 ? 'PM' : 'AM';
   const hours = (((d.getHours() + 11) % 12) + 1);
-  const dateNew = monthName + ' ' + d.getDate() + ', ' + d.getFullYear() + '   |   ' + hours  + ':' + d.getMinutes() + ' ' + suffix;
+  const dateNew = `${monthName} + ' ' + d.getDate() + ', ' + d.getFullYear() + '|' + ${hours}  + ':' + d.getMinutes() + ' ' + ${suffix}`;
   return dateNew;
 }
 
