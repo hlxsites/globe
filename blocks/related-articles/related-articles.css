@@ -5,7 +5,6 @@ main .section.related-articles-container {
 }
 
 main .section > .related-articles-wrapper {
-  /* max-width: unset; */
   background-color: var(--color-gray-1);
   background-image: url('../../styles/related-articles-leaf.png');
   background-repeat: no-repeat;
@@ -33,7 +32,6 @@ main  .section > .related-articles-wrapper::before {
 }
 
 main .related-articles {
-  /* flex-wrap: wrap; */
   max-width: 350px;
   margin: auto;
   z-index: 10;
