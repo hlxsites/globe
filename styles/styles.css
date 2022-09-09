@@ -59,6 +59,11 @@
 
 }
 
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 @media (min-width: 1000px) {
   :root {
     --nav-height: 169px;
@@ -73,8 +78,7 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
-  max-width: 100%;
-  overflow-x: hidden;
+  position: relative;
 }
 
 body.appear {
@@ -293,6 +297,12 @@ hr {
     padding-top: 4%;
   }
 
+  main .section.social-container {
+    width: 45vw;
+    margin-left: 21%;
+    padding-top: 4%;
+  }
+
   main .section.bio-container .default-content-wrapper p:nth-child(2) img {
     padding-top: 4%;
     height: auto;
@@ -392,6 +402,11 @@ main .section.bio-container .default-content-wrapper img {
 }
 
 main .bio-container .default-content-wrapper {
+  font-size: 0.8em;
+  max-width: 100%;
+}
+
+main .section.social-container .default-content-wrapper {
   font-size: 0.8em;
 }
 
