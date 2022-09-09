@@ -616,7 +616,7 @@ function buildHeroBlock(main) {
 }
 
 function loadHeader(header) {
-  const headerBlock = buildBlock('header', '');
+  const headerBlock = buildBlock('header', [['<div>Nav</div>', '<div>/test-nav</div>']]);
   header.append(headerBlock);
   decorateBlock(headerBlock);
   loadBlock(headerBlock);

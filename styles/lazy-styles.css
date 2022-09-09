@@ -85,9 +85,14 @@ span.icon-instagram2::before {
   font-size: 20px;
 }
 
-
 span.icon-tag::before {
   font-family: brie-icon;
   content: "\e9db";
   font-size: 16px;
+}
+
+span.icon-viber2::before {
+  font-family: brie-icon;
+  content: "\E9A1";
+  font-size: 20px;
 }

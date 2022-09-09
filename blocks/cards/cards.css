@@ -68,7 +68,7 @@
     transition: opacity 1s;  
     width: 100%; 
     height: auto;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #0074D9;
 }
 
 main .section.highlight {
