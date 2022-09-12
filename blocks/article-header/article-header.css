@@ -270,10 +270,6 @@ main .article-header > .article-header-share {
     
   }
 
-  /* main .article-header .article-header-extra > div > p {
-    margin-top: 1%;
-  } */
-
   main .article-header .article-header-tags-pub p:first-child {
     font-size: 0.9em;
     width: 100%;
@@ -286,12 +282,9 @@ main .article-header > .article-header-share {
     padding: 0;
     margin-left: 2%;
     font-size: 0.85em;
+
     /* margin-bottom: 1%; */
   }
-
-  /* main .article-header .article-header-tags-pub > div > p:first-child span {
-    padding-top: 1%;
-  } */
 
   main .article-header .article-header-tags-pub > div > p:last-child span {
     padding-left: 5%; 
@@ -326,6 +319,10 @@ main .article-header > .article-header-share {
 }
 
 @media (min-width:1200px) {
+  main .article-header .article-header-extra > div > p {
+    margin-top: 1%;
+  }
+
   main .article-header .article-header-extra > div > p .share-buttons {
     width: 70%;
   }
@@ -334,3 +331,4 @@ main .article-header > .article-header-share {
     display: inline;   
   }
 }
+

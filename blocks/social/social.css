@@ -43,6 +43,7 @@ main .social-wrapper .social > p {
 
 @media (min-width: 1200px) {
     main .social-wrapper .social > p > p {
+        margin-top: 1%;
         width: 45vw;
       }
     
