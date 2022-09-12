@@ -176,6 +176,27 @@ main .article-header a:any-link {
   text-decoration: none;
 }
 
+
+main .article-header .article-header-extra .share-buttons {
+  white-space: nowrap;
+  margin-top: 6px;
+  float: right;
+  width: 40%;
+}
+
+main .article-header .article-header-extra .share-buttons a {
+  display: flex;
+  height: 30px;
+}
+
+main .article-header .article-header-extra > div > p .share-buttons a .share-button-label {
+  display: none;
+  font-size: 10.5px;
+  line-height: 30px;
+  color: white;
+  margin: 0 15px 0 5px;
+}
+
 main .article-header .article-header-extra > div > p > span:last-child a {
   margin-left: 2%;
   text-decoration: none;
@@ -188,11 +209,6 @@ main .article-header .article-header-extra > div > p > span:last-child a {
 main .article-header .article-header-extra > div > p > span:last-child a:last-child {
   padding-right: 1%;
 }
-
-main .article-header .article-header-extra > div > p .share-buttons a .share-button-label {
-  display: none;
-  visibility: hidden;
-} 
 
 main .article-header .article-header-publication-date > span:nth-child(1)::before {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
@@ -282,17 +298,6 @@ main .article-header > .article-header-share {
   main .article-header .article-header-extra > div > p > span:last-child {
     padding-left: 0;
   }
-  
-  main .article-header .article-header-extra > div > p:last-child .share-buttons a {
-    margin-left: 0.5%;
-    padding-right: 7px;
-    padding-left: 7px;
-  }
-  
-  main .article-header .article-header-extra > div > p .share-buttons a .share-button-label {
-    display: contents;
-    visibility: visible;
-  }
 }
 
   @media (min-width: 500px) and (max-width: 900px) {
@@ -310,4 +315,14 @@ main .article-header > .article-header-share {
     main .article-header .article-header-tags-pub > div > p:last-child {
       padding-top: 2%;
     }
+}
+
+@media (min-width:1200px) {
+  main .article-header .article-header-extra > div > p .share-buttons {
+    width: 70%;
+  }
+
+  main .article-header .article-header-extra > div > p .share-buttons a .share-button-label {
+    display: inline;   
+  }
 }
