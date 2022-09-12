@@ -136,7 +136,7 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   header nav {
       position: relative;
       padding: 0;
-      margin-top: -20px;
+      margin-top: -22px;
       width: 100%;
   }
 
