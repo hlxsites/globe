@@ -107,6 +107,7 @@ main .related-articles-card-body {
 
 main .related-articles-card-body p:nth-child(2) {
   margin: 0;
+  display: none;
 }
 
 main .related-articles-card-body p:last-child {
