@@ -114,16 +114,13 @@ main .article-header .article-header-tags-pub {
   max-width: 100%;
   margin-left: 2%;
   margin-right: 2%;
+  padding-left: 0;
 }
 
 
 main .article-header .article-header-extra > div > p {
   margin-top: 3%;
   width: 100%;
-} 
-
-main .article-header .article-header-tags-pub {
-  padding-left: 0;
 }
 
 main .article-header .article-header-tags-pub > div > p {

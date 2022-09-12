@@ -66,7 +66,7 @@ export function getShareButtons() {
         <span class="share-button-label" style="font-size: 10.5px; line-height: 20px; height: 20px; color: rgb(255, 255, 255);">Facebook</span>
       </a>  
     </span>`;
-} 
+}
 
 function buildArticleHeader(main) {
   try {
