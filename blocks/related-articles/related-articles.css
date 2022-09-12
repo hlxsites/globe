@@ -46,6 +46,11 @@ main .related-articles-card {
   border-top: 1px solid blue;
   min-height: 160px;
   height: auto;
+  margin-top: -15px;
+}
+
+main .related-articles-card:first-child {
+  margin-top: 0;
 }
 
 main .related-articles-card-header {
@@ -81,7 +86,7 @@ main .related-articles-card h3 {
   font-size: 15px;
   font-weight: 600;
   font-style: normal;
-  margin: 0 0 20px;
+  margin: 0 0 5px;
 }
 
 main .related-articles-card p:last-child {
@@ -98,6 +103,14 @@ main .related-articles-card-body {
   position: absolute;
   height: auto;
   max-height: max-content;
+}
+
+main .related-articles-card-body p:nth-child(2) {
+  margin: 0;
+}
+
+main .related-articles-card-body p:last-child {
+  margin-top: 0;
 }
 
 @media (min-width: 700px) and (max-width: 1190px) {

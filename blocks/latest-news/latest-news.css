@@ -130,6 +130,7 @@ main .section > .latest-news-wrapper {
       margin: 0;
       width: auto;
       padding: 0;  
+      padding-inline-start: 2%;
     }
 
     main .section .latest-news {
@@ -137,7 +138,7 @@ main .section > .latest-news-wrapper {
       display: flex;
       flex-flow: row wrap;
       width: auto;
-      column-gap: 12px;
+      column-gap: 30px;
     }
 
     main .latest-news-card {
@@ -170,7 +171,7 @@ main .section > .latest-news-wrapper {
     }
 
     main .section.latest-news-container .default-content-wrapper {
-      padding-left: 5%;
+      padding-left: 7%;
     }
 
   }

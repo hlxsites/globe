@@ -1,7 +1,7 @@
 /* header and nav layout */
 header nav {
   align-items: center;
-  position: fixed;
+  position: sticky;
   z-index: 1;
   background-color: var(--background-color);
   width: 100vw;
@@ -136,7 +136,7 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
   header nav {
       position: relative;
       padding: 0;
-      margin-top: -20px;
+      margin-top: -22px;
       width: 100%;
   }
 
@@ -196,7 +196,7 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
       position: absolute;   
       top:20%;
       left: 4%;
-      color: lightskyblue;
+      color: #009cde;
       font-weight: bold;
   }
 

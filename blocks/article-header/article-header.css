@@ -110,20 +110,26 @@ main .article-header .article-header-tags-pub {
   font-size: 15px;
   font-weight: 400;
   border-bottom: 1px solid blue;
-  padding-bottom: 1%;
+  padding-bottom: 4%;
   max-width: 100%;
   margin-left: 2%;
   margin-right: 2%;
+  padding-left: 0;
 }
 
 
 main .article-header .article-header-extra > div > p {
   margin-top: 3%;
   width: 100%;
-} 
+}
 
 main .article-header .article-header-tags-pub > div > p {
   max-width: 100%;
+}
+
+main .article-header .article-header-tags-pub > div {
+  display: flex;
+  justify-content: center;
 }
 
 main .article-header .article-header-tags-pub p:first-child {
@@ -137,6 +143,7 @@ main .article-header .article-header-tags-pub p:first-child {
 }
 
 main .article-header .article-header-tags-pub p:last-child {
+  padding-top: 8%;
   padding-left: 5%;
   font-size: 0.8em;
 }
@@ -154,7 +161,7 @@ main .article-header .article-header-extra > div > p > span:first-child {
 
 main .article-header .article-header-extra > div > p > span:last-child {
   padding-top: 2%;
-  padding-left: 29%;
+  padding-left: 22%;
 }
 
 main .article-header-share > a {
@@ -169,19 +176,39 @@ main .article-header a:any-link {
   text-decoration: none;
 }
 
+
+main .article-header .article-header-extra .share-buttons {
+  white-space: nowrap;
+  margin-top: 6px;
+  float: right;
+  width: 40%;
+}
+
+main .article-header .article-header-extra .share-buttons a {
+  display: flex;
+  height: 30px;
+}
+
+main .article-header .article-header-extra > div > p .share-buttons a .share-button-label {
+  display: none;
+  font-size: 10.5px;
+  line-height: 30px;
+  color: white;
+  margin: 0 15px 0 5px;
+}
+
 main .article-header .article-header-extra > div > p > span:last-child a {
   margin-left: 2%;
   text-decoration: none;
+  white-space: nowrap;
+  float: right;
+  padding-right: 5px;
+  padding-left: 7px;
 }
 
 main .article-header .article-header-extra > div > p > span:last-child a:last-child {
   padding-right: 1%;
 }
-
-main .article-header .article-header-extra > div > p .share-buttons a .share-button-label {
-  display: none;
-  visibility: hidden;
-} 
 
 main .article-header .article-header-publication-date > span:nth-child(1)::before {
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
@@ -232,14 +259,15 @@ main .article-header > .article-header-share {
     padding-right: 0;
     padding-left: 0;
     margin-left: 23%;
+    padding-bottom: 1%;
   }
 
   main .article-header .article-header-tags-pub > div {
     display: flex;
-  }
-
-  main .article-header .article-header-extra > div > p {
-    margin-top: 1%;
+    justify-content: left;
+    align-items: center;
+    padding: 0;
+    
   }
 
   main .article-header .article-header-tags-pub p:first-child {
@@ -247,16 +275,19 @@ main .article-header > .article-header-share {
     width: 100%;
     border-right: 1px solid grey;
     padding-right: 0;
+    margin-bottom: 1%;
   }
 
   main .article-header .article-header-tags-pub p:last-child {
-    padding-left: 3%;
-    padding-top: 1%;
-    margin-left: 0;
+    padding: 0;
+    margin-left: 2%;
+    font-size: 0.85em;
+
+    /* margin-bottom: 1%; */
   }
 
   main .article-header .article-header-tags-pub > div > p:last-child span {
-    margin-top: 7%;
+    padding-left: 5%; 
   }
 
   main .article-header .article-header-extra {
@@ -266,15 +297,38 @@ main .article-header > .article-header-share {
   }
 
   main .article-header .article-header-extra > div > p > span:last-child {
-    padding-left: 50%;
-  }
-  
-  main .article-header .article-header-extra > div > p:last-child .share-buttons a {
-    margin-left: 0.5%;
-  }
-  
-  main .article-header .article-header-extra > div > p .share-buttons a .share-button-label {
-    display: contents;
-    visibility: visible;
+    padding-left: 0;
   }
 }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    main .article-header .article-header-tags-pub > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+    }
+
+    main .article-header .article-header-tags-pub > div > p:first-child {
+      left: 1%;
+    }
+
+    main .article-header .article-header-tags-pub > div > p:last-child {
+      padding-top: 2%;
+    }
+}
+
+@media (min-width:1200px) {
+  main .article-header .article-header-extra > div > p {
+    margin-top: 1%;
+  }
+
+  main .article-header .article-header-extra > div > p .share-buttons {
+    width: 70%;
+  }
+
+  main .article-header .article-header-extra > div > p .share-buttons a .share-button-label {
+    display: inline;   
+  }
+}
+
