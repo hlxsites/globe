@@ -103,6 +103,10 @@ main .section > .latest-news-wrapper {
     order: 2;
   }
 
+  main .latest-news-card-body p:nth-child(2) {
+    display: none;
+  }
+
   main .section.latest-news-container {
     background-color: #f6f7fa;
   }
